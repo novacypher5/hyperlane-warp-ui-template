@@ -32,7 +32,7 @@ export const config: Config = Object.freeze({
   isDevMode,
   registryUrl,
   registryBranch,
-  //registryProxyUrl,
+  registryProxyUrl,
   showDisabledTokens: false,
   showTipBox: true,
   version,

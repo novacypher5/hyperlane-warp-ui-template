@@ -69,7 +69,7 @@ export const useStore = create<AppState>()(
       registry: new GithubRegistry({
         uri: config.registryUrl,
         branch: config.registryBranch,
-        //proxyUrl: config.registryProxyUrl,
+        proxyUrl: config.registryProxyUrl,
       }),
       warpCore: new WarpCore(new MultiProtocolProvider({}), []),
       setWarpContext: ({ registry, chainMetadata, multiProvider, warpCore }) => {
