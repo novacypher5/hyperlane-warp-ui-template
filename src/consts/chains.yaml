@@ -18,3 +18,49 @@
 #   protocol: ethereum
 #   rpcUrls:
 #     - http: http://127.0.0.1:8555
+
+oorttesnet:
+  # yaml-language-server: $schema=../schema.json
+  name: oorttesnet
+  displayName: Oorttesnet
+  chainId: 9700
+  domainId: 9700
+  protocol: ethereum
+  isTestnet: true
+  nativeToken:
+    decimals: 18
+    name: OORT
+    symbol: OORT
+  rpcUrls:
+    - http: https://dev-rpc.oortech.com
+
+sepolia:
+  # yaml-language-server: $schema=../schema.json
+  name: sepolia
+  displayName: Sepolia
+  chainId: 11155111
+  domainId: 11155111
+  protocol: ethereum
+  isTestnet: true
+  nativeToken:
+    decimals: 18
+    name: Ether
+    symbol: ETH
+  rpcUrls:
+    - http: https://ethereum-sepolia.publicnode.com
+    - http: https://ethereum-sepolia.blockpi.network/v1/rpc/public
+    - http: https://rpc.sepolia.org
+  blockExplorers:
+    - apiUrl: https://api-sepolia.etherscan.io/api
+      family: etherscan
+      name: Etherscan
+      url: https://sepolia.etherscan.io
+  blocks:
+    confirmations: 1
+    estimateBlockTime: 13
+    reorgPeriod: 2
+  deployer:
+    name: Abacus Works
+    url: https://www.hyperlane.xyz
+  gasCurrencyCoinGeckoId: ethereum
+  gnosisSafeTransactionServiceUrl: https://safe-transaction-sepolia.safe.global

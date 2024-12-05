@@ -3,9 +3,9 @@ import { ADDRESS_BLACKLIST } from './blacklist';
 
 const isDevMode = process?.env?.NODE_ENV === 'development';
 const version = process?.env?.NEXT_PUBLIC_VERSION || '0.0.0';
-const registryUrl = process?.env?.NEXT_PUBLIC_REGISTRY_URL || undefined;
+const registryUrl = process?.env?.NEXT_PUBLIC_REGISTRY_URL || 'https://github.com/novacypher5/hyperlane-registry';
 const registryBranch = process?.env?.NEXT_PUBLIC_REGISTRY_BRANCH || undefined;
-const registryProxyUrl = process?.env?.NEXT_PUBLIC_GITHUB_PROXY || 'https://proxy.hyperlane.xyz';
+const registryProxyUrl = process?.env?.NEXT_PUBLIC_GITHUB_PROXY || undefined;
 const walletConnectProjectId = process?.env?.NEXT_PUBLIC_WALLET_CONNECT_ID || '';
 const transferBlacklist = process?.env?.NEXT_PUBLIC_TRANSFER_BLACKLIST || '';
 const chainWalletWhitelists = JSON.parse(process?.env?.NEXT_PUBLIC_CHAIN_WALLET_WHITELISTS || '{}');
@@ -32,7 +32,7 @@ export const config: Config = Object.freeze({
   isDevMode,
   registryUrl,
   registryBranch,
-  registryProxyUrl,
+  //registryProxyUrl,
   showDisabledTokens: false,
   showTipBox: true,
   version,
