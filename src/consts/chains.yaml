@@ -19,6 +19,36 @@
 #   rpcUrls:
 #     - http: http://127.0.0.1:8555
 
+ethereum:
+  # yaml-language-server: $schema=../schema.json
+  name: ethereum
+  displayName: ethereum
+  chainId: 1
+  domainId: 1
+  protocol: ethereum
+  isTestnet: false
+  nativeToken:
+    decimals: 18
+    name: OORT
+    symbol: OORT
+  rpcUrls:
+    - http: https://eth.llamarpc.com
+
+oortmainnet:
+  # yaml-language-server: $schema=../schema.json
+  name: oortmainnet
+  displayName: Oortmainnet
+  chainId: 970
+  domainId: 970
+  protocol: ethereum
+  isTestnet: false
+  nativeToken:
+    decimals: 18
+    name: OORT
+    symbol: OORT
+  rpcUrls:
+    - http: https://mainnet-rpc.oortech.com
+
 oorttesnet:
   # yaml-language-server: $schema=../schema.json
   name: oorttesnet
